@@ -1,0 +1,9 @@
+max width = 796px
+
+widht 500px menu mas pequeño
+
+
+400 hamburguesa
+
+
+min width = 250
