@@ -1,4 +1,10 @@
- @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+ 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 
 /* Reset */
@@ -6,8 +12,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;    
+    /* Para que el scrolleo en la one page sea suave 
+    scroll-behavior: smooth; */   
     color:white;  
 }
 /* En esta parte se realizan las configuraciones y reglas establecidas en la consigna*/
@@ -82,8 +88,6 @@ header {
 
 /* Configurando el menu de navegación */
 .container-nav {
-    position: fixed;
-    z-index: 1000;
     width: 80vw;
     display: flex;
     flex-direction: row;
@@ -93,13 +97,21 @@ header {
     padding: 1em;    
     margin: auto;
     background-color: white;
-    box-shadow: 0px 3px 3px  #af599e;;
+    box-shadow: 0px 3px 3px  #af599e;
+    position: fixed;
+    z-index: 1000;      
     }
 
 .container-nav .logo {
     letter-spacing: 5px;
+    align-items: center;
+    margin-top: -1rem;
+    padding-bottom: -2rem;
 }
 
+.menu {
+    padding-top: 1rem;
+}
 .container-nav .menu-icon {
     display: none;
 }
@@ -112,13 +124,13 @@ header {
 
 .container-nav .menu ul li {
     list-style: none; 
-    color: #0f0f0f;      
+   color: #0f0f0f;      
 }
 
 .container-nav .menu ul li a {    
     text-decoration: none;
     margin: auto;
-    padding: 1em;
+    padding: 0.5em;
     color: #0f0f0f; 
     transition: all 0.3s linear;   
     border-radius: 5px;      
@@ -138,12 +150,19 @@ header {
 
 /*Con esta regla se pretende centrar los lementos que componen el sitio web*/
 .main {
-    justify-content: space-around;
-    padding-top: 3rem;
+    justify-content: space-between;
+    
 }
 
-.inicio {
-    padding-top: 2em;
+.inicio{
+    padding-top: 6rem;
+}
+.portafolio {
+padding-top: 4rem;
+margin-bottom: 2px;
+}
+.contactos {
+    padding-top: 20rem;
 }
 /* Con esta regla se le dan las dimensiones a las secciones para que sean homogeneas */
 section {
@@ -151,11 +170,11 @@ section {
     max-width: 900px;
     min-height: 100vh;
     margin: auto;   
-    position: sticky; 
-    }
+   }
 
 /* Dandole estilo a la foto de presentación*/
 .foto {
+       
     width: 40vw;
     max-width: 400px;
     height: 65vh;
@@ -163,8 +182,8 @@ section {
     object-fit: cover;
     border: solid 1.5px #af599e;
     border-radius: 1000px;
-    margin: 0 auto;
-    }
+    margin: 0 auto;  
+}
 
 /* Configurando los parrafos*/
 .parrafo1, .parrafo2, .imagenes {
@@ -176,6 +195,7 @@ section {
     padding: 0 1em;
     text-indent: 1em;
     }
+
 .parrafo2 {
     width: auto;
     background-color: rgba(175, 89, 158, 0.3); 
@@ -197,18 +217,6 @@ p + p {
     margin-top: 2rem;
     justify-content: space-around;
     }
-
-/*.imagen {
-    background-color: #af599e;   
-    color: white; 
-    width: 80%;
-    height: 45%;
-    padding: 3px 0;    
-     align-items: center;
-    text-align: center; 
-   margin-left: 0.3em;
-    margin-right: 0.3em;
-}*/  
 
 .iconos i  {
     background-color: #af599e;   
@@ -277,9 +285,11 @@ footer p {
     
     .container-nav .logo {
         letter-spacing: 2px;
+        margin-bottom: 0.5rem;
     }
     .container-nav .menu-icon,  .container-nav .menu ul {
         display: block;
+        margin-bottom: 0.5rem;
     }
     .menu-icon {
         cursor: pointer;
@@ -292,6 +302,10 @@ footer p {
 
     .icon .menu ul.show{
         display: block;
+        }
+
+    .icon .menu ul li {
+        margin-bottom: 0.5rem;
     }
 
     figure img .foto {
