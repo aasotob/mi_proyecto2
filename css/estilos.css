@@ -158,11 +158,11 @@ header {
     padding-top: 6rem;
 }
 .portafolio {
-padding-top: 4rem;
+padding-top: 6rem;
 margin-bottom: 2px;
 }
 .contactos {
-    padding-top: 20rem;
+    padding-top: 12rem;
 }
 /* Con esta regla se le dan las dimensiones a las secciones para que sean homogeneas */
 section {
@@ -206,6 +206,56 @@ section {
 p + p {
     text-indent: 1.5em;
     margin-top: 0 
+}
+/* Aqui se sonfigura la sección de portafolio */
+
+.portafolio-container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+h3 {
+    color: black;
+    text-align: center;
+}
+.container {   
+   
+    width: 280px;
+    
+    height:auto;
+}
+
+.card {
+    width: 250px;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-img-top .card-body {
+    width: 3rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+
+.card-title {
+    color: black;
+    text-align: center;
+}
+
+.text {
+    width: 200px;
+    height: auto;
+}
+
+.producto {
+    color: white;
 }
 
 /* Aqui se sonfigura la sección donde están los íconos de enlaces*/
