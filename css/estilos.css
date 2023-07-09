@@ -162,7 +162,7 @@ padding-top: 6rem;
 margin-bottom: 2px;
 }
 .contactos {
-    padding-top: 12rem;
+    padding-top: 4rem;
 }
 /* Con esta regla se le dan las dimensiones a las secciones para que sean homogeneas */
 section {
@@ -345,6 +345,10 @@ footer p {
         cursor: pointer;
     }
 
+    .mostrar {
+        height: auto;
+    }
+
     .icon .menu ul {
         display: none;
     }
@@ -366,6 +370,12 @@ footer p {
         /*border-radius: 1000px;*/
         margin: 0 auto;
         }    
+    
+    
+.contactos {
+    padding-top: 4rem;
+}
+
 } 
 
 @media (max-width: 450px){

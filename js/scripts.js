@@ -10,10 +10,12 @@ jQuery('document').ready(function($){
             }else {
                 menu.addClass('show');
             }
-
         })
 
-
-
-
+        document.getElementById("menu").addEventListener("click", function(){
+            menu.removeClass('show');
+           // document.getElementById("navega").classList.toggle("mostrar");
+        });
+        
 });
+
